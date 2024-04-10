@@ -231,13 +231,13 @@ dev = ["polib"]
 
 [[package]]
 name = "dlt"
-version = "0.4.8"
+version = "0.4.7"
 description = "dlt is an open-source python-first scalable data loading library that does not require any backend to run."
 optional = false
 python-versions = "<3.13,>=3.8.1"
 files = [
-    {file = "dlt-0.4.8-py3-none-any.whl", hash = "sha256:ade57b2745986c8aada7b2e28856df20164a7738a281c8a87596af62a378be06"},
-    {file = "dlt-0.4.8.tar.gz", hash = "sha256:fc46d2ee61bd8d128db84a8214081f78ff642bad5677fdac210080a1f1bcbcf8"},
+    {file = "dlt-0.4.7-py3-none-any.whl", hash = "sha256:73ae8edabca97ceb7d4a9fb114c525646d390cd5da01c367c998703504a2a4d1"},
+    {file = "dlt-0.4.7.tar.gz", hash = "sha256:692ad0f4abfce728ff59f75de4743f6c48ce843e89ef467ff8aeee260012c8a4"},
 ]
 
 [package.dependencies]
@@ -277,7 +277,6 @@ bigquery = ["gcsfs (>=2022.4.0)", "google-cloud-bigquery (>=2.26.0)", "grpcio (>
 cli = ["cron-descriptor (>=1.2.32)", "pipdeptree (>=2.9.0,<2.10)"]
 databricks = ["databricks-sql-connector (>=2.9.3,<3.0.0)"]
 dbt = ["dbt-athena-community (>=1.2.0)", "dbt-bigquery (>=1.2.0)", "dbt-core (>=1.2.0)", "dbt-databricks (>=1.7.3,<2.0.0)", "dbt-duckdb (>=1.2.0)", "dbt-redshift (>=1.2.0)", "dbt-snowflake (>=1.2.0)"]
-dremio = ["pyarrow (>=12.0.0)"]
 duckdb = ["duckdb (>=0.10.0,<0.11.0)", "duckdb (>=0.6.1,<0.10.0)"]
 filesystem = ["botocore (>=1.28)", "s3fs (>=2022.4.0)"]
 gcp = ["gcsfs (>=2022.4.0)", "google-cloud-bigquery (>=2.26.0)", "grpcio (>=1.50.0)"]
@@ -1819,4 +1818,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.11"
-content-hash = "0ef800623d8a6daaf1d443e8bc034acad8c25a68ecb65788e4900edb16929830"
+content-hash = "a4b20b6c841e5a6a30707134569d082727e8169f5b685a06aa822761af75a441"
