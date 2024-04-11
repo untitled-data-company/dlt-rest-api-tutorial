@@ -10,12 +10,18 @@ pokemon_config = {
         "write_disposition": "replace",
         "endpoint": {
             "params": {
-                "limit": 10000,
+                "limit": 1000,
             },
         },
     },
     "resources": [
-        "berry",
+        {
+          "name": "berries",
+          "endpoint": {
+            "path": "berry"
+          },
+          "selected": False
+        },
         "pokemon",
         {
             "name": "berry_details",
@@ -24,7 +30,7 @@ pokemon_config = {
                 "params": {
                     "berry_name": {
                         "type": "resolve",
-                        "resource": "berry",
+                        "resource": "berries",
                         "field": "name",
                     },
                 },
