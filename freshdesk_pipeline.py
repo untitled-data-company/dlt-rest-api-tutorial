@@ -3,14 +3,14 @@ import dlt
 from rest_api import RESTAPIConfig, rest_api_source
 from rest_api.auth import HttpBasicAuth
 
-basic_auth = HttpBasicAuth(dlt.secrets['sources.freshdesk.token'], "")
+basic_auth = HttpBasicAuth(dlt.secrets["sources.freshdesk.token"], "")
 
 config: RESTAPIConfig = {
-  "client": {
-    "base_url": "https://untitleddatacompany.freshdesk.com/api/v2/",
-    "auth": basic_auth
-  },
-  "resources": [ "tickets" ]
+    "client": {
+        "base_url": "https://untitleddatacompany.freshdesk.com/api/v2/",
+        "auth": basic_auth,
+    },
+    "resources": ["tickets"],
 }
 
 freshdesk_source = rest_api_source(config)
