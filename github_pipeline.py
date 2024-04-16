@@ -14,8 +14,15 @@ config: rest_api.typing.RESTAPIConfig = {
             "endpoint": {
                 "params": {
                     "creator": "@me",
+                    "since": {
+                        "type": "incremental",
+                        "cursor_path": "updated_at",
+                        "initial_value": "2022-01-01T00:00:00Z",
+                    },
                 }
             },
+            "write_disposition": "merge",
+            "primary_key": "id",
         }
     ],
 }
