@@ -75,3 +75,8 @@ dlt pipeline github_pipeline drop issues
 This avoids dlt from attempting to apply an `ALTER TABLE` statement adding a constraint on the `ID` field which duckdb does not support at the moment (v0.9.2).
 
 [Video](https://youtu.be/2AUqv0ojwm0)
+
+# Tutorial 4: Custom Authentication
+In [zoom.py](zoom.py), we implement a connector to the Zoom API to load meeting and webinar information.
+We implemented the specific OAuth 2.0 implementation for Zoom.
+Also, we implemented response actions, such as ignoring certain error messages or HTTP status codes.
