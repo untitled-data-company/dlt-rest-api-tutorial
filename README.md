@@ -80,3 +80,5 @@ This avoids dlt from attempting to apply an `ALTER TABLE` statement adding a con
 In [zoom.py](zoom.py), we implement a connector to the Zoom API to load meeting and webinar information.
 We implemented the specific OAuth 2.0 implementation for Zoom.
 Also, we implemented response actions, such as ignoring certain error messages or HTTP status codes.
+
+See tutorial blog post here: [How To Create A dlt Source With A Custom Authentication Method](https://untitleddata.company/blog/How-to-create-a-dlt-source-with-a-custom-authentication-method-rest-api-vs-airbyte-low-code)

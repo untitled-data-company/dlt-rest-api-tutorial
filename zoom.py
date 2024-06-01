@@ -93,7 +93,6 @@ config: RESTAPIConfig = {
                 "path": "/meetings/{meeting_id}/registrants",
                 "params": resolve_meeting_id,
                 "response_actions": [
-                    {"status_code": 300, "action": "ignore"},
                     {
                         "content": "Registration has not been enabled for this meeting",
                         "action": "ignore",
