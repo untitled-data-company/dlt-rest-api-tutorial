@@ -74,7 +74,7 @@ config: RESTAPIConfig = {
         ),
         "paginator": JSONResponseCursorPaginator(
             cursor_path="response.next_page_token",
-            cursor_param="next_page_token",
+            cursor_param="page_number",
         ),
     },
     "resources": [
